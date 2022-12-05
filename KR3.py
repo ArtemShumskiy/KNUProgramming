@@ -48,7 +48,7 @@ def plot_seq(x, y, b = None, eps=0.01, forall = True):
         return x[k], y[k]
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     t = (1, 200, 1)
     x = np.arange(*t)
     y = func01(x)
@@ -94,7 +94,7 @@ def animate(i):
     return line,
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     anim = FuncAnimation(
         fig,
         animate,
@@ -140,7 +140,7 @@ def animate(i):
     return line,
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     anim = FuncAnimation(
         fig,
         animate,
