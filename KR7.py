@@ -12,7 +12,7 @@ def compareFolders2(dir1, dir2):
         path = os.path.join(cur_dir, item)
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     res_file = input("file for result: ")
     out_res = open(res_file, "w", encoding = "utf-8")
 
@@ -54,7 +54,7 @@ def compareFolders3(dir1, dir2):
 
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     res_file = input("file for result: ")
     out_res =  open(res_file, "w", encoding = "utf-8")
 
@@ -94,7 +94,7 @@ def archive(folder, date_now):
                 tf.add(it)
                 os.remmove(path)
 
-if __name__ == 'main':
+if __name__ == '__main__':
     date_now = datetime.datetime.now()
     folder = input("Folder ")
     archive(folder, date_now)
