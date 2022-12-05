@@ -81,7 +81,7 @@ def func1(*args, **kwargs):
   return p
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
   print("{}".format(f(2)))
   print("{}".format(f(-3)))
   print("{}".format(f1(1,4)))
