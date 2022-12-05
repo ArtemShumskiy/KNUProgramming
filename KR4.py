@@ -71,7 +71,7 @@ def is_orto2(x):
     eye = np.eye(x.shape[0])
     return np.all(np.neg(np.isclose(eye, prod)))
 
-if __name__ == "main":
+if __name__ == "__main__":
 
     x = np.eye(3)
     print(x)
@@ -93,7 +93,7 @@ def matrix(x):
         else:
             pass
     return magic_matrix
-if __name__ == 'main':
+if __name__ == '__main__':
     print(matrix(np.array([[5,5,5],[5,5,5],[5,5,5]])))
     print(matrix(np.array([[5,5,5],[5,8,5],[6,5,5]])))
 
@@ -128,7 +128,7 @@ def dist(i, j, x, y):
     return (x[i] - x[j])**2 + (y[i]- y[j])**2
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     pts = inputPoints()
 
     x = np.array([it[0] for it in ar])
