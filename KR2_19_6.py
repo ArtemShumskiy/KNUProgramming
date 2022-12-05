@@ -43,7 +43,7 @@ class Simple:
     def method3(self):
         return 0
 
-if __name__ == "main":
+if __name__ == "__main__":
     s = Simple()
     s.method1(1, 2, 3)
     s.method1(3, 4, 5, x = 1, y = 2)
