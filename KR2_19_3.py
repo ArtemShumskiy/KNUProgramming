@@ -42,7 +42,7 @@ class Rectangle(Shape):
         return abs(self.x2 - self.x1) * abs(self.y2 - self.y1)
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     c = Circle(0, 0, 1)
     print(c.perimeter(), c.square())
     r = Rectangle(0, 0, 2, 3)
