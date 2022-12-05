@@ -26,7 +26,7 @@ def _change_date(match):
 def change_dates(string):
     return re.sub(DATE, _change_date,string)
 
-if __name__ == 'main':
+if __name__ == '__main__':
     with open("21.1_check.txt", "r") as inp:
         s = inp.read()
         s = change_dates(s)
@@ -52,7 +52,7 @@ SENTENCE = "[a - z, A - Z,\s, \.,\,] * [\.?!\b]"
 
 SENTENCE = r"[A - ZA - ЯІЇЄ].*?[\.\!\?](?)"
 
-if __name__ == "main":
+if __name__ == "__main__":
     fn = "3.txt"
     rexp = SENTENCE
     printWords(fn, rexp)
